@@ -1,0 +1,23 @@
+/* アニメーションの定義 */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+    50% {
+        transform: translateX(100px);
+        background-color: #2ecc71;
+    }
+    100% {
+        transform: translateX(0);
+        background-color: #3498db;
+    }
+}
+
+/* アニメーションを適用する要素のスタイル */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    animation: slide 1s infinite;
+}

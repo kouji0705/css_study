@@ -1,0 +1,17 @@
+/* 回転アニメーションの定義 */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* アニメーションを適用する要素のスタイル */
+.rotate-box {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    animation: rotate 2s linear infinite;
+}
