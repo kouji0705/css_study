@@ -1,0 +1,11 @@
+.focus-input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.focus-input:focus {
+    border-color: #3498db; /* フォーカス時にボーダーの色を変更 */
+    outline: none; /* デフォルトのアウトラインを削除 */
+}
