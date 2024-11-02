@@ -1,0 +1,15 @@
+.transition-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.transition-button:hover {
+    background-color: #2ecc71; /* ホバー時に背景色を変更 */
+    transform: scale(1.1); /* ホバー時にサイズを拡大 */
+}
