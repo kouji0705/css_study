@@ -1,0 +1,45 @@
+.filter-examples img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+/* ぼかし効果 */
+.filter-blur {
+    filter: blur(5px);
+}
+
+/* 明るさ効果 */
+.filter-brightness {
+    filter: brightness(150%);
+}
+
+/* コントラスト効果 */
+.filter-contrast {
+    filter: contrast(200%);
+}
+
+/* グレースケール効果 */
+.filter-grayscale {
+    filter: grayscale(100%);
+}
+
+/* 反転効果 */
+.filter-invert {
+    filter: invert(100%);
+}
+
+/* 彩度効果 */
+.filter-saturate {
+    filter: saturate(200%);
+}
+
+/* セピア効果 */
+.filter-sepia {
+    filter: sepia(100%);
+}
+
+/* ドロップシャドウ効果 */
+.filter-drop-shadow {
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+}
