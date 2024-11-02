@@ -1,0 +1,10 @@
+.selection-example {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.selection-example::selection {
+    background-color: red; /* 選択されたテキストの背景色を変更 */
+    color: #fff; /* 選択されたテキストの文字色を変更 */
+}
