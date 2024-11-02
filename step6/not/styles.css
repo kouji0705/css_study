@@ -1,0 +1,10 @@
+.not-example li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+}
+
+.not-example li:not(.exclude) {
+    background-color: #3498db; /* クラス "exclude" を持たないアイテムに背景色を適用 */
+    color: #fff; /* テキストの色を白に設定 */
+}
