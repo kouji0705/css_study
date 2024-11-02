@@ -1,0 +1,18 @@
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:enabled {
+    background-color: #3498db; /* 有効化されたボタンの背景色 */
+    color: #fff; /* テキストの色を白に設定 */
+}
+
+.btn:disabled {
+    background-color: #ccc; /* 無効化されたボタンの背景色 */
+    color: #666; /* テキストの色をグレーに設定 */
+    cursor: not-allowed; /* カーソルを「禁止」アイコンに変更 */
+}
