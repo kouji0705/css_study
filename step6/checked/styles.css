@@ -1,0 +1,22 @@
+.checkbox-example {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox {
+    display: none; /* チェックボックス自体を非表示にする */
+}
+
+.checkbox + label {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkbox:checked + label {
+    background-color: #3498db; /* チェックされているときの背景色 */
+    color: #fff; /* テキストの色を白に設定 */
+}
