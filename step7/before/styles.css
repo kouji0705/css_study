@@ -1,0 +1,20 @@
+.before-example {
+    list-style: none; /* デフォルトのリストスタイルを削除 */
+    padding: 0;
+}
+
+.before-example li {
+    padding: 10px 10px 10px 30px; /* 左側に余白を追加 */
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    position: relative; /* 擬似要素の位置を相対的に設定 */
+}
+
+.before-example li::before {
+    content: "★"; /* 擬似要素の内容を設定 */
+    color: #3498db; /* 擬似要素の色を設定 */
+    position: absolute; /* 擬似要素の位置を絶対的に設定 */
+    left: 10px; /* 擬似要素の左位置を設定 */
+    top: 50%; /* 擬似要素の上位置を設定 */
+    transform: translateY(-50%); /* 擬似要素を垂直方向に中央揃え */
+}

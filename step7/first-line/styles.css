@@ -1,0 +1,9 @@
+.first-line-example {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.first-line-example::first-line {
+    font-weight: bold; /* 最初の行を太字にする */
+    color: #3498db; /* 最初の行の色を変更する */
+}
