@@ -1,0 +1,12 @@
+.first-letter-example {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.first-letter-example::first-letter {
+    font-size: 2em; /* 最初の文字を大きくする */
+    color: #3498db; /* 最初の文字の色を変更する */
+    font-weight: bold; /* 最初の文字を太字にする */
+    float: left; /* 最初の文字を左に浮かせる */
+    margin-right: 5px; /* 最初の文字の右に余白を追加する */
+}
