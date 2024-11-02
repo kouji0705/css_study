@@ -1,0 +1,13 @@
+.nth-child-example li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+}
+
+.nth-child-example li:nth-child(odd) {
+    background-color: #f4f4f9; /* 奇数番目のアイテムに背景色を適用 */
+}
+
+.nth-child-example li:nth-child(even) {
+    background-color: #e0e0e0; /* 偶数番目のアイテムに背景色を適用 */
+}

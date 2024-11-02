@@ -1,0 +1,15 @@
+.child-example li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+}
+
+.child-example li:first-child {
+    background-color: #3498db; /* 最初のアイテムに背景色を適用 */
+    color: #fff; /* テキストの色を白に設定 */
+}
+
+.child-example li:last-child {
+    background-color: #e74c3c; /* 最後のアイテムに背景色を適用 */
+    color: #fff; /* テキストの色を白に設定 */
+}
