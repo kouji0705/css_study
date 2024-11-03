@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.accordion {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.accordion-checkbox {
+  display: none;
+}
+
+.accordion-button {
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: background-color 0.4s;
+  display: block;
+}
+
+.accordion-button:hover {
+  background-color: #0056b3;
+}
+
+.accordion-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.accordion-checkbox:checked + .accordion-button {
+  background-color: #28a745; /* 緑色に変更 */
+}
+
+.accordion-checkbox:checked + .accordion-button + .accordion-content {
+  display: block; /* 表示 */
+  padding: 18px;
+}
+
+.accordion-button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.4s;
+    display: block;
+  }
+  
