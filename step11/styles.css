@@ -1,0 +1,28 @@
+.tooltip {
+    margin: 32px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip::after {
+    margin-left: 32px;
+    content: attr(data-tooltip); /* data-tooltip属性の値を表示 */
+    position: absolute; /* 絶対位置指定 */
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    opacity: 0; /* 透明度を0に設定 */
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
