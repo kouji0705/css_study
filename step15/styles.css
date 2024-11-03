@@ -4,7 +4,7 @@ body {
     overflow: hidden; /* スクロールバーを非表示にする */
     background: #000; /* 背景色を黒に設定 */
     height: 100vh; /* 表示エリアの高さを100vhに設定 */
-    position: relative;
+    position: relative; /* 相対位置指定 */
 }
 
 @keyframes fall {
@@ -18,32 +18,32 @@ body {
 
 @keyframes sway {
     0%, 100% {
-        transform: translateX(0);
+        transform: translateX(0); /* 初期位置と終了位置は水平移動なし */
     }
     50% {
-        transform: translateX(20px);
+        transform: translateX(20px); /* 中間地点で右に20px移動 */
     }
 }
 
 .snowflake {
     position: absolute;
-    top: -10%;
-    color: #fff;
-    font-size: 1em;
-    user-select: none;
-    pointer-events: none;
-    animation: fall linear infinite, sway ease-in-out infinite;
+    top: -10%; /* 初期位置を画面の上に設定 */
+    color: #fff; /* 雪の結晶の色を白に設定 */
+    font-size: 1em; /* フォントサイズを1emに設定 */
+    user-select: none; /* ユーザーによる選択を無効化 */
+    pointer-events: none; /* ポインターイベントを無効化 */
+    animation: fall linear infinite, sway ease-in-out infinite; /* 落下と揺れのアニメーションを設定 */
 }
 
 .snowflake:nth-child(odd) {
-    animation-duration: 10s, 2s;
+    animation-duration: 10s, 2s; /* 奇数番目の雪の結晶のアニメーションの持続時間を設定 */
 }
 
 .snowflake:nth-child(even) {
-    animation-duration: 15s, 3s;
+    animation-duration: 15s, 3s; /* 偶数番目の雪の結晶のアニメーションの持続時間を設定 */
 }
 
-.snowflake:nth-child(1) { left: 10%; }
+.snowflake:nth-child(1) { left: 10%; } /* 雪の結晶の位置を設定 */
 .snowflake:nth-child(2) { left: 20%; }
 .snowflake:nth-child(3) { left: 30%; }
 .snowflake:nth-child(4) { left: 40%; }
