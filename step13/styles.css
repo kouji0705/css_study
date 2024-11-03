@@ -1,0 +1,6 @@
+.ellipsis {
+    white-space: nowrap; /* テキストを折り返さない */
+    overflow: hidden; /* はみ出した部分を隠す */
+    text-overflow: ellipsis; /* はみ出した部分を「...」で表示 */
+    width: 200px; /* 必要に応じて幅を設定 */
+}

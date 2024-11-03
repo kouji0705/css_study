@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* スクロールバーを非表示にする */
+    background: #000; /* 背景色を黒に設定 */
+    height: 100vh; /* 表示エリアの高さを100vhに設定 */
+    position: relative;
+}
+
+@keyframes fall {
+    0% {
+        top: -10%; /* 画面の上から開始 */
+    }
+    100% {
+        top: 100%; /* 画面の下まで移動 */
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+}
+
+.snowflake {
+    position: absolute;
+    top: -10%;
+    color: #fff;
+    font-size: 1em;
+    user-select: none;
+    pointer-events: none;
+    animation: fall linear infinite, sway ease-in-out infinite;
+}
+
+.snowflake:nth-child(odd) {
+    animation-duration: 10s, 2s;
+}
+
+.snowflake:nth-child(even) {
+    animation-duration: 15s, 3s;
+}
+
+.snowflake:nth-child(1) { left: 10%; }
+.snowflake:nth-child(2) { left: 20%; }
+.snowflake:nth-child(3) { left: 30%; }
+.snowflake:nth-child(4) { left: 40%; }
+.snowflake:nth-child(5) { left: 50%; }
+.snowflake:nth-child(6) { left: 60%; }
+.snowflake:nth-child(7) { left: 70%; }
+.snowflake:nth-child(8) { left: 80%; }
+.snowflake:nth-child(9) { left: 90%; }
+.snowflake:nth-child(10) { left: 100%; }

@@ -1,0 +1,10 @@
+.multiline-ellipsis {
+    display: -webkit-box; /* Flexboxの代わりにWebkit Boxを使用 */
+    -webkit-box-orient: vertical; /* ボックスの方向を縦に設定 */
+    overflow: hidden; /* はみ出した部分を隠す */
+    text-overflow: ellipsis; /* はみ出した部分を「...」で表示 */
+    -webkit-line-clamp: 3; /* 表示する行数を設定 */
+    line-clamp: 3; /* 非標準プロパティ（互換性のため） */
+    line-height: 1.5em; /* 行の高さを設定 */
+    max-height: 4.5em; /* 行数に応じた最大高さを設定 (1.5em * 3行) */
+}
