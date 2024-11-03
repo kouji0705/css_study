@@ -1,0 +1,19 @@
+@keyframes typing {
+    from { width: 0; } /* アニメーションの開始時点で幅を0に設定 */
+    to { width: 100%; } /* アニメーションの終了時点で幅を100%に設定 */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; } /* アニメーションの開始と終了時点でカーソルを透明に設定 */
+    50% { border-color: black; } /* アニメーションの中間点でカーソルを黒に設定 */
+}
+
+.typing-effect {
+    font-family: monospace; /* 等幅フォントを使用 */
+    white-space: nowrap; /* テキストを折り返さない */
+    overflow: hidden; /* 要素の内容がはみ出さないように隠す */
+    border-right: 0.15em solid black; /* 右側にカーソルを表示 */
+    width: 0; /* 初期幅を0に設定 */
+    animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite; /* タイピングとカーソルの点滅アニメーションを設定 */
+}
+
