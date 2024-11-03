@@ -1,0 +1,8 @@
+input:invalid {
+    border: 2px solid red; /* 無効な入力に赤枠を設定 */
+}
+
+input:valid {
+    border: 2px solid green; /* 有効な入力に緑枠を設定（オプション） */
+}
+
