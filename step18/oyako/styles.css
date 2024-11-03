@@ -1,0 +1,14 @@
+/* 詳細度: 1 (要素セレクタ) */
+div {
+  color: blue;
+}
+
+/* 詳細度: 10 (クラスセレクタ) */
+.child {
+  color: green;
+}
+
+/* 詳細度: 100 (IDセレクタ) */
+#specific-child {
+  color: red;
+}

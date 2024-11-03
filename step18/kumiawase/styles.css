@@ -1,0 +1,34 @@
+/* 詳細度: 1 (要素セレクタ) */
+div {
+  color: blue;
+}
+
+/* 詳細度: 10 (クラスセレクタ) */
+.child {
+  color: green;
+}
+
+/* 詳細度: 100 (IDセレクタ) */
+#specific-child {
+  color: red;
+}
+
+/* 詳細度: 11 (要素セレクタ + クラスセレクタ) */
+div .child {
+  color: purple;
+}
+
+/* 詳細度: 110 (IDセレクタ + クラスセレクタ) */
+#specific-parent .child {
+  color: orange;
+}
+
+/* 詳細度: 100 (単純なIDセレクタ) */
+#simple-id {
+  color: brown;
+}
+
+/* 詳細度: 110 (親付きの子要素のIDセレクタ) */
+#specific-parent #parent-child-id {
+  color: pink;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div>
+    <p>この段落は親要素のスタイルを継承します。</p>
+  </div>
+  <div class="child">
+    <p>この段落はクラスセレクタのスタイルを継承します。</p>
+  </div>
+  <div id="specific-child">
+    <p>この段落はIDセレクタのスタイルを継承します。</p>
+  </div>
+  <div>
+    <div class="child">
+      <p>この段落は要素セレクタとクラスセレクタの組み合わせのスタイルを継承します。</p>
+      <p id="simple-id">この段落は単純なIDのスタイルを継承します。</p>
+    </div>
+  </div>
+  <div id="specific-parent">
+    <div class="child">
+      <p id="simple-id">この段落は単純なIDのスタイルを継承します。</p>
+      <p id="parent-child-id">この段落は親付きの子要素のIDのスタイルを継承します。</p>
+      <p>この段落はIDセレクタとクラスセレクタの組み合わせのスタイルを継承します。</p>
+    </div>
+  </div>
+</body>
+</html>
