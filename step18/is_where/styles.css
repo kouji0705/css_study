@@ -1,0 +1,15 @@
+/* 詳細度: 1 (要素セレクタ) */
+h1 {
+  color: blue;
+}
+
+/* 詳細度: 1 (要素セレクタ) */
+:is(h1) {
+  color: purple;
+}
+
+/* 詳細度: 0 (:whereセレクタ) */
+:where(h1) {
+  color: orange;
+  font-size: 18px;
+}
