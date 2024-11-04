@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>太陽系の公転アニメーション</title>
+    <!-- CSSファイルをリンク -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="solar-system">
+        <!-- 経過年数の表示 -->
+        <div class="year-counter">経過年数: <span id="years">0</span> 年</div>
+
+        <div class="sun"></div>
+
+        <!-- 水星 -->
+        <div class="orbit mercury-orbit">
+            <div class="planet mercury">
+                <div class="planet-label">水星</div>
+            </div>
+        </div>
+
+        <!-- 金星 -->
+        <div class="orbit venus-orbit">
+            <div class="planet venus">
+                <div class="planet-label">金星</div>
+            </div>
+        </div>
+
+        <!-- 地球 -->
+        <div class="orbit earth-orbit">
+            <div class="planet earth">
+                <div class="planet-label">地球</div>
+            </div>
+        </div>
+
+        <!-- 火星 -->
+        <div class="orbit mars-orbit">
+            <div class="planet mars">
+                <div class="planet-label">火星</div>
+            </div>
+        </div>
+
+        <!-- 木星 -->
+        <div class="orbit jupiter-orbit">
+            <div class="planet jupiter">
+                <div class="planet-label">木星</div>
+            </div>
+        </div>
+
+        <!-- 土星 -->
+        <div class="orbit saturn-orbit">
+            <div class="planet saturn">
+                <div class="planet-label">土星</div>
+            </div>
+        </div>
+
+        <!-- 天王星 -->
+        <div class="orbit uranus-orbit">
+            <div class="planet uranus">
+                <div class="planet-label">天王星</div>
+            </div>
+        </div>
+
+        <!-- 海王星 -->
+        <div class="orbit neptune-orbit">
+            <div class="planet neptune">
+                <div class="planet-label">海王星</div>
+            </div>
+        </div>
+
+        <!-- 冥王星（オプション） -->
+        <div class="orbit pluto-orbit">
+            <div class="planet pluto">
+                <div class="planet-label">冥王星</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScriptファイルを読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
