@@ -1,0 +1,243 @@
+/* 太陽系の全体設定 */
+.solar-system {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    background: black;
+    overflow: hidden;
+}
+
+/* 経過秒数の表示スタイル */
+.time-counter {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    z-index: 100;
+}
+
+/* 太陽のスタイル */
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -40px 0 0 -40px;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 30px yellow;
+}
+
+/* 惑星の軌道のスタイル */
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+}
+
+/* 惑星のスタイル */
+.planet {
+    position: absolute;
+    top: -6px; /* 惑星のサイズの半分を引いて中心に揃える */
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    transform-origin: center center;
+}
+
+/* 惑星のラベルのスタイル */
+.planet-label {
+    position: absolute;
+    top: 15px; /* 惑星からの距離を調整 */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* 各惑星の個別設定 */
+
+/* 水星 */
+.mercury-orbit {
+    width: 120px;
+    height: 120px;
+    margin: -60px 0 0 -60px;
+    animation: rotate-mercury 2.4s linear infinite;
+}
+
+.mercury {
+    left: 60px;
+    background: gray;
+}
+
+@keyframes rotate-mercury {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 金星 */
+.venus-orbit {
+    width: 160px;
+    height: 160px;
+    margin: -80px 0 0 -80px;
+    animation: rotate-venus 6.2s linear infinite;
+}
+
+.venus {
+    left: 80px;
+    background: orange;
+}
+
+@keyframes rotate-venus {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 地球 */
+.earth-orbit {
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    animation: rotate-earth 10s linear infinite;
+}
+
+.earth {
+    left: 100px;
+    background: blue;
+}
+
+@keyframes rotate-earth {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 火星 */
+.mars-orbit {
+    width: 240px;
+    height: 240px;
+    margin: -120px 0 0 -120px;
+    animation: rotate-mars 18.8s linear infinite;
+}
+
+.mars {
+    left: 120px;
+    background: red;
+}
+
+@keyframes rotate-mars {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 木星 */
+.jupiter-orbit {
+    width: 280px;
+    height: 280px;
+    margin: -140px 0 0 -140px;
+    animation: rotate-jupiter 50s linear infinite;
+}
+
+.jupiter {
+    left: 140px;
+    background: brown;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+}
+
+@keyframes rotate-jupiter {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 土星 */
+.saturn-orbit {
+    width: 320px;
+    height: 320px;
+    margin: -160px 0 0 -160px;
+    animation: rotate-saturn 80s linear infinite;
+}
+
+.saturn {
+    left: 160px;
+    background: goldenrod;
+    width: 18px;
+    height: 18px;
+    top: -9px;
+}
+
+@keyframes rotate-saturn {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 天王星 */
+.uranus-orbit {
+    width: 360px;
+    height: 360px;
+    margin: -180px 0 0 -180px;
+    animation: rotate-uranus 110s linear infinite;
+}
+
+.uranus {
+    left: 180px;
+    background: lightblue;
+    width: 16px;
+    height: 16px;
+    top: -8px;
+}
+
+@keyframes rotate-uranus {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 海王星 */
+.neptune-orbit {
+    width: 400px;
+    height: 400px;
+    margin: -200px 0 0 -200px;
+    animation: rotate-neptune 140s linear infinite;
+}
+
+.neptune {
+    left: 200px;
+    background: darkblue;
+    width: 16px;
+    height: 16px;
+    top: -8px;
+}
+
+@keyframes rotate-neptune {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 冥王星（オプション） */
+.pluto-orbit {
+    width: 440px;
+    height: 440px;
+    margin: -220px 0 0 -220px;
+    animation: rotate-pluto 170s linear infinite;
+}
+
+.pluto {
+    left: 220px;
+    background: lightgray;
+    width: 8px;
+    height: 8px;
+    top: -4px;
+}
+
+@keyframes rotate-pluto {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
