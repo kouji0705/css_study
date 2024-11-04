@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container > div {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 空の要素を非表示にする */
+.container > div:empty {
+  display: none;
+}
+
+/* 子要素として <p> を持つ親要素を非表示にする */
+.container > div:has(p) {
+  display: none;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>空コンテンツの例</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>空コンテンツの例</h2>
+
+  <div class="container">
+    <div class="empty-element"> </div> <!-- 空白文字が含まれているが、視覚的には空 -->
+    <div class="non-empty-element">コンテンツがあります。</div>
+    <div class="parent-element">
+      <p>子要素があります。</p>
+    </div>
+    <div class="parent-element"></div>
+    <div class="empty-element"></div> <!-- 完全に空の要素 -->
+    <div class="parent-element">
+      <span>別の子要素があります。</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

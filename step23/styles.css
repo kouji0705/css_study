@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.circle-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #007BFF;
+  border-radius: 50%;
+  top: calc(50% - 10px); /* 中心に配置 */
+  left: calc(50% - 10px); /* 中心に配置 */
+  transform: translate(calc(100px * cos(45deg)), calc(100px * sin(45deg)));
+}
