@@ -1,0 +1,214 @@
+/* 太陽系の全体設定 */
+.solar-system {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    background: black;
+    overflow: hidden;
+}
+
+/* 太陽のスタイル */
+.sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -40px 0 0 -40px; /* 太陽を正確に中心に配置 */
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 30px yellow;
+}
+
+/* 惑星コンテナのスタイル */
+.planet-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform-origin: top left; /* 回転の基点を太陽の中心に */
+}
+
+/* 惑星のスタイル */
+.planet {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+}
+
+/* 惑星のラベルのスタイル */
+.planet-label {
+    position: absolute;
+    top: 15px; /* 惑星からの距離を調整 */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* 各惑星の個別設定 */
+
+/* 水星 */
+.mercury-container {
+    animation: rotate-mercury 4s linear infinite;
+}
+
+.mercury {
+    left: 60px; /* 太陽からの距離 */
+    top: -6px;  /* 惑星のサイズの半分を引いて中心に揃える */
+    background: gray;
+}
+
+@keyframes rotate-mercury {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 金星 */
+.venus-container {
+    animation: rotate-venus 7s linear infinite;
+}
+
+.venus {
+    left: 80px;
+    top: -6px;
+    background: orange;
+}
+
+@keyframes rotate-venus {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 地球 */
+.earth-container {
+    animation: rotate-earth 10s linear infinite;
+}
+
+.earth {
+    left: 100px;
+    top: -6px;
+    background: blue;
+}
+
+@keyframes rotate-earth {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 火星 */
+.mars-container {
+    animation: rotate-mars 12s linear infinite;
+}
+
+.mars {
+    left: 120px;
+    top: -6px;
+    background: red;
+}
+
+@keyframes rotate-mars {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 木星 */
+.jupiter-container {
+    animation: rotate-jupiter 20s linear infinite;
+}
+
+.jupiter {
+    left: 140px;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: brown;
+    border-radius: 50%;
+}
+
+@keyframes rotate-jupiter {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 土星 */
+.saturn-container {
+    animation: rotate-saturn 30s linear infinite;
+}
+
+.saturn {
+    left: 160px;
+    top: -9px;
+    width: 18px;
+    height: 18px;
+    background: goldenrod;
+    border-radius: 50%;
+}
+
+@keyframes rotate-saturn {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 天王星 */
+.uranus-container {
+    animation: rotate-uranus 40s linear infinite;
+}
+
+.uranus {
+    left: 180px;
+    top: -8px;
+    width: 16px;
+    height: 16px;
+    background: lightblue;
+    border-radius: 50%;
+}
+
+@keyframes rotate-uranus {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 海王星 */
+.neptune-container {
+    animation: rotate-neptune 50s linear infinite;
+}
+
+.neptune {
+    left: 200px;
+    top: -8px;
+    width: 16px;
+    height: 16px;
+    background: darkblue;
+    border-radius: 50%;
+}
+
+@keyframes rotate-neptune {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 冥王星（オプション） */
+.pluto-container {
+    animation: rotate-pluto 60s linear infinite;
+}
+
+.pluto {
+    left: 220px;
+    top: -4px;
+    width: 8px;
+    height: 8px;
+    background: lightgray;
+    border-radius: 50%;
+}
+
+@keyframes rotate-pluto {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
